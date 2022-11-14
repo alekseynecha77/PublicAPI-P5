@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Awesome Startup Employee Directory</h1>
+      <input type="text" id="search-input" placeholder="Search for employee" class="employee-search" onkeyup="searchEmployees()"  autocomplete="off">
+
+    </header>
+
+    <div class="overlay hidden"></div>
+    <main class="grid-container" onclick="openPopup()">     
+      <div class="card"></div>
+
+
+    </main>
+   
+      <div class="modal" id="popcard">
+        <button class="modal-close" onclick="closePopup()">X</button>
+
+        <div class="modal-content">
+          <!--  -->
+
+          <img class="avatar" />
+          <div class="text-container">
+            <h2 class="name"></h2>
+            <p class="email"></p>
+            <p class="address"></p>
+            <hr />
+            <p></p>
+            <p class="address"></p>
+            <p></p>
+          </div>
+        </div>
+       
+        <div class="arrows">
+          <img
+          src="left-arrow.png"
+          alt="left arrow"
+          class="arrow-left"
+          id="left"
+        />
+          <img
+            src="arrow-right.png"
+            alt="right arrow"
+            class="arrow-right"
+            id="right"
+          />
+  
+        </div>
+      </div>
+
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
