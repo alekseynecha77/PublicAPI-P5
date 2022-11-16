@@ -25,6 +25,7 @@ header {
   display: flex;
   flex-direction: row;
   width: auto;
+  align-items: center;
 }
 #focusButton{
   width: 25%;
