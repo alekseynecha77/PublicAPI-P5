@@ -9,8 +9,11 @@
   box-sizing: border-box;
 }
 
+
 body {
 position: relative;
+background: rgb(200, 130, 130);
+
 }
 
 header {
@@ -45,6 +48,10 @@ visibility: hidden;
   width: 40%;
   height: 40%;
  
+}
+svg{
+  display: flex;
+  width: 5%;
 }
 img {
 border-radius: 50%;

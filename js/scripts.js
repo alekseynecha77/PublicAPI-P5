@@ -127,7 +127,10 @@ rightArrow.addEventListener("click", () => {
 });
 
 const input = document.getElementById("search-input");
-input.addEventListener("keyup", searchEmployees);
+
+input.addEventListener("input", searchEmployees);
+document.querySelector('svg').addEventListener("click", searchEmployees);
+
 
 function searchEmployees() {
   filterVal = document.getElementById("search-input").value.toLowerCase();
